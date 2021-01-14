@@ -4,6 +4,11 @@ class CartsController < ApplicationController
         render json: carts   
     end
 
+    def show
+        cart = Cart.find(params[:id])
+        render json: cart
+    end
+
     def update
         cart = Cart.find(params[:id])
         cart.update!(cart_params)
