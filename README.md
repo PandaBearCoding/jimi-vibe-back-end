@@ -17,7 +17,8 @@
         3. Favorite products
         4. Add available products into their cart
         5. Input checkout information to purchase available products
+        6. View what other users have recently purchased
 
 # RELATIONSHIPS:
     User --< Favorites >-- Products
-    User --< Cart >-- Products
+    User --< Carts >-- Products
